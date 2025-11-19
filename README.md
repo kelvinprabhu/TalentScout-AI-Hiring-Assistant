@@ -436,5 +436,74 @@ For questions or feedback about this project:
 - [GDPR Compliance Guide](https://gdpr.eu/)
 
 ---
+1. Modular Architecture 🏗️
 
+7 separate modules for better code organization:
+
+config.py - Configuration and session state
+prompts.py - All AI prompts
+utils.py - Utility functions
+llm_handler.py - LLM operations
+voice_handler.py - Voice input handling
+report_generator.py - PDF/JSON generation
+main.py - Main Streamlit app
+
+
+
+2. Automatic Assessment Completion 🎯
+
+AI asks exactly 5 technical questions
+Automatically detects when assessment is complete
+Auto-resets conversation after report generation
+Smooth transition to report generation phase
+
+3. Professional Report Generation 📊
+
+PDF Reports with:
+
+Professional formatting
+Candidate info table
+Q&A with pagination
+Comprehensive AI analysis
+
+
+JSON Reports with structured data
+Both saved to /Reports folder
+Naming: CandidateName_YYYYMMDD_HHMMSS.{pdf,json}
+
+4. Voice Input Integration 🎤
+
+Google Speech Recognition
+Activates automatically during technical Q&A
+15-second recording window
+Real-time transcription
+Fallback to text input anytime
+Toggle on/off in sidebar
+
+5. Enhanced Features ⚡
+
+Detects question completion phrases
+Stores Q&A pairs automatically
+AI-powered candidate analysis with scoring
+Download buttons for both report formats
+"Screen New Candidate" button to reset
+Full conversation history view
+
+📝 Setup Instructions:
+
+Create project folder with 7 Python files (copy from artifact)
+Install dependencies: pip install -r requirements.txt
+Install PyAudio (platform-specific - see README)
+Run: streamlit run main.py
+Enter Groq API key in sidebar
+Start screening!
+
+🎯 Workflow:
+
+Choose Chat or Resume mode
+AI collects 7 required fields
+5 technical questions (voice or text)
+Automatic completion detection
+Reports auto-generate (PDF + JSON)
+Download or start new screening
 **Built with ❤️ for TalentScout**
