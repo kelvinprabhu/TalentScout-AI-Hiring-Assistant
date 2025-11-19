@@ -3,6 +3,7 @@
 """Main Streamlit application."""
 from typing import Dict, Any
 
+
 import streamlit as st
 from langchain_core.chat_history import InMemoryChatMessageHistory
 from config import initialize_session_state, AppConfig
