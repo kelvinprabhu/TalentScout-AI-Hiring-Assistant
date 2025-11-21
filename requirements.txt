@@ -1,9 +1,59 @@
+# ============================================================================
+# TalentScout - AI-Powered Hiring Assistant
+# Python Dependencies
+# ============================================================================
 
+# Core Framework
 streamlit>=1.28.0
+
+# AI & LLM Integration
 langchain-groq>=0.1.0
 langchain-core>=0.1.0
+
+# PDF Processing
 pdfplumber>=0.10.0
+
+# PDF Generation & Reporting
 reportlab>=4.0.0
+
+# Voice Input & Speech Recognition
 SpeechRecognition>=3.10.0
 PyAudio>=0.2.13
-Python>=3.8
+
+# Optional: Environment Variables (Recommended for production)
+# python-dotenv>=1.0.0
+
+# Optional: Database Integration
+# psycopg2-binary>=2.9.0  # PostgreSQL
+# pymongo>=4.5.0          # MongoDB
+
+# Optional: Email Notifications
+# sendgrid>=6.10.0
+
+# Optional: Excel Export
+# pandas>=2.0.0
+# openpyxl>=3.1.0
+
+# Optional: Testing
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# ============================================================================
+# Installation Notes:
+# ============================================================================
+# 
+# PyAudio requires platform-specific setup:
+#
+# Windows:
+#   pip install pipwin
+#   pipwin install pyaudio
+#
+# macOS:
+#   brew install portaudio
+#   pip install pyaudio
+#
+# Linux (Ubuntu/Debian):
+#   sudo apt-get install portaudio19-dev python3-pyaudio
+#   pip install pyaudio
+#
+# ============================================================================
