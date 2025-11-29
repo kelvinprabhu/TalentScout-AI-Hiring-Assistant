@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: talentscout/talentscout:latest
+          tags: kelvinprabhu/talentscout:latest
