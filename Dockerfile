@@ -1,4 +1,5 @@
-FROM python:3.10
+# Use a minimal official Python image
+FROM python:3.10-slim
 
 # Prevent Python from writing .pyc files and use buffered output
 ENV PYTHONDONTWRITEBYTECODE=1
