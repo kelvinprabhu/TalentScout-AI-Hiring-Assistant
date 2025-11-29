@@ -42,7 +42,7 @@ pandas==2.3.3
 pdfminer.six==20251107
 pdfplumber==0.11.8
 pillow==12.0.0
-protobuf==6.33.1
+protobuf==5.29.0
 pyarrow==21.0.0
 PyAudio==0.2.14
 pycparser==2.23
